@@ -1,0 +1,12 @@
+
+   INFO  Running migrations.  
+
+  2026_10_26_000005_add_store_delivery_features ................. ثانيتين DONE
+  2026_10_26_000006_normalize_local_phone_numbers ............... 35.54ms DONE
+
+
+   INFO  Seeding database.  
+
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ....... RUNNING  
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ... 162 ms DONE  
+

@@ -1,0 +1,1 @@
+<a class="brand" href="{{ route('home') }}" aria-label="متجري، الرئيسية"><img src="{{ asset('assets/mark-metjari.png') }}" width="42" height="42" alt=""><span>متجري<small>من متجرك لزبونك</small></span></a>

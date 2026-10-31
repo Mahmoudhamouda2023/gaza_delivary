@@ -1,0 +1,103 @@
+
+   PASS  Tests\Feature\AuthenticationTest
+  ✓ public pages render without javascript or external dependencies      9.69s  
+  ✓ guests are directed to the matching login portal                     0.07s  
+  ✓ registration creates only pending merchant and opens status page     0.20s  
+  ✓ equivalent phone registration is rejected without duplicate store    0.06s  
+  ✓ staff login chooses admin or captain from server roles               0.27s  
+  ✓ temporary password must be changed before any work route             0.19s  
+  ✓ wrong current password cannot change the password                    0.12s  
+  ✓ same password cannot be reused for forced change                     0.07s  
+  ✓ login guards are separate even for same phone                        0.30s  
+  ✓ suspended staff cannot login                                         0.27s  
+  ✓ failed logins are throttled                                          1.14s  
+  ✓ logout invalidates access and session version key                    0.07s  
+  ✓ a stale session is rejected after password change elsewhere          0.04s  
+  ✓ registration validation does not flash passwords                     0.03s  
+
+   PASS  Tests\Feature\DeliveryWorkflowTest
+  ✓ money is exact and rounding is deterministic                         0.15s  
+  ✓ per store discount and recipient fee payer are correct               0.30s  
+  ✓ price snapshot survives tariff edit                                  0.28s  
+  ✓ duplicate submission does not duplicate order or credit              0.23s  
+  ✓ changed quote aborts without reserving benefit                       0.18s  
+  ✓ cancelling refunds credit once and terminal status is locked         1.57s  
+  ✓ gift is reserved before subscription and restored on return          0.56s  
+  ✓ expired and future benefits do not apply                             0.33s  
+  ✓ coupon limited and cancellation releases use                         0.33s  
+  ✓ fixed coupon is capped and best discount is not stacked              0.19s  
+  ✓ coupon for another store cannot be used                              0.23s  
+  ✓ orders cannot use another merchants address                          0.18s  
+  ✓ inactive routes fail without creating orders                         0.16s  
+  ✓ full cod lifecycle has one ledger entry and no settlement before ca… 0.94s  
+  ✓ recipient paid fee keeps full goods value for merchant               0.28s  
+  ✓ wrong collection does not mark delivered                             0.37s  
+  ✓ rejecting remittance releases entries and approval cannot repeat     0.19s  
+  ✓ unassigned captain cannot read or change order                       0.18s  
+  ✓ other merchant cannot read orders receipts or addresses              0.17s  
+  ✓ captain cannot confirm return or cancel                              0.22s  
+  ✓ finance can view but cannot dispatch and operations cannot pay       0.26s  
+  ✓ public tracking never exposes phone address cash or internal notes   0.11s  
+  ✓ all operational pages render with real data                          0.96s  
+  ✓ merchant can preview confirm and submit again safely over http       0.21s  
+  ✓ gifts and packages can be requested and activated over http          0.22s  
+  ✓ catalog saves percentage as basis points and rejects above 100       0.18s  
+  ✓ export escapes spreadsheet formulas                                  0.11s  
+  ✓ last admin cannot be demoted and team accounts can be reactivated    0.25s  
+  ✓ admin reset password invalidates sessions and forces change without… 0.14s  
+  ✓ quote signature detects return fee change even when delivery fee is… 0.13s  
+  ✓ financial pages render approved batches and receipts are isolated    0.96s  
+  ✓ order issue can be opened and answered once                          0.36s  
+  ✓ to date filter works without from date and csv has no cross store d… 0.35s  
+  ✓ old financial form cannot settle different orders with identical to… 0.42s  
+
+   PASS  Tests\Feature\StaffAdministrationTest
+  ✓ super admin can create a captain that requires password change       0.18s  
+  ✓ operations cannot provision accounts or escalate roles               0.31s  
+  ✓ last admin cannot suspend themself                                   0.14s  
+  ✓ suspended captain is logged out on next request                      0.15s  
+  ✓ captain role requires vehicle type                                   0.09s  
+
+   PASS  Tests\Feature\StoreAdministrationTest
+  ✓ admin approves store and merchant can login to own dashboard         0.37s  
+  ✓ rejection reason is visible only in authenticated owner status page  0.40s  
+  ✓ finance staff can view but cannot review store                       0.41s  
+  ✓ captain and merchant cannot read store administration endpoints      0.30s  
+  ✓ merchant dashboard does not use a store id from query string         0.16s  
+  ✓ review requires reason and invalid transitions do not change state   0.31s  
+  ✓ store names and review notes are html escaped                        0.31s  
+  ✓ yajra endpoint paginates without exposing owner secrets              0.53s  
+  ✓ yajra endpoint rejects unbounded pages and regex search              0.20s  
+
+   PASS  Tests\Feature\StoreEnhancementsTest
+  ✓ eight character password and arabic local phone register successful… 0.26s  
+  ✓ registration rejects nonlocal or wrong length phone with data set #… 0.19s  
+  ✓ registration rejects nonlocal or wrong length phone with data set #… 0.23s  
+  ✓ registration rejects nonlocal or wrong length phone with data set #… 0.15s  
+  ✓ registration rejects nonlocal or wrong length phone with data set #… 0.25s  
+  ✓ registration rejects nonlocal or wrong length phone with data set #… 0.16s  
+  ✓ seven character password is rejected                                 0.16s  
+  ✓ admin provisions electric bicycle captain with eight character pass… 0.33s  
+  ✓ password change accepts eight characters                             0.16s  
+  ✓ scheduled order stores utc and displays palestine time               0.32s  
+  ✓ past schedule cannot create order                                    0.18s  
+  ✓ now ignores an old scheduled value                                   0.26s  
+  ✓ neighborhood is required for configured zone and cannot cross zones  0.27s  
+  ✓ admin manages neighborhoods and merchants cannot                     0.23s  
+  ✓ percentage uses final fee and is snapshotted                         0.20s  
+  ✓ pricing study computes break even without changing tariffs           0.32s  
+  ✓ digital collection requires review and does not double count with d… 0.47s  
+  ✓ digital collection requires review and does not double count with d… 0.42s  
+  ✓ digital collection requires review and does not double count with d… 0.45s  
+  ✓ digital collection requires review and does not double count with d… 2.20s  
+  ✓ digital collection requires review and does not double count with d… 1.17s  
+  ✓ digital collection requires review and does not double count with d… 0.43s  
+  ✓ reference is required and no delivery is recorded on failure         0.81s  
+  ✓ reusing same receipt for second order rolls back delivery            0.40s  
+  ✓ captain cannot approve payment and can correct only rejected receip… 0.37s  
+  ✓ cash cannot be claimed as direct merchant transfer                   0.31s  
+  ✓ pending digital captain funds cannot enter remittance                0.35s  
+
+  Tests:    89 passed (469 assertions)
+  Duration: 39.43s
+

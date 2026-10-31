@@ -1,0 +1,23 @@
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 117.26ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000001_create_cache_table ......................... 180.27ms DONE
+  0001_01_01_000002_create_jobs_table .......................... 176.90ms DONE
+  2026_10_24_000000_create_permission_tables ................... 560.66ms DONE
+  2026_10_24_000001_create_delivery_identity_tables ............... ثانية DONE
+  2026_10_24_000002_create_delivery_catalog ....................... ثانية DONE
+  2026_10_24_000003_create_delivery_orders ...................... ثانيتين DONE
+  2026_10_24_000004_create_delivery_finance ....................... ثانية DONE
+  2026_10_26_000005_add_store_delivery_features ................. ثانيتين DONE
+  2026_10_26_000006_normalize_local_phone_numbers ............... 16.76ms DONE
+
+
+   INFO  Seeding database.  
+
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ....... RUNNING  
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ... 256 ms DONE  
+

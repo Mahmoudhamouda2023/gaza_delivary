@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "Admin desktop fits viewport",
+    "Admin creates zones, route tariff and 12% store agreement",
+    "Merchant mobile dashboard fits viewport",
+    "Mobile order form fits viewport",
+    "Mobile price review fits viewport",
+    "Merchant creates address, reviews exact discount and confirms order",
+    "Captain mobile assigned order fits viewport",
+    "Captain confirms pickup, dispatch and delivery with exact COD",
+    "Captain mobile finance fits viewport",
+    "Settlement receipt desktop fits viewport",
+    "Finance receives full COD, pays merchant net 91.20 and captain 6.00 separately",
+    "Merchant mobile statement fits viewport",
+    "Merchant mobile benefits fits viewport",
+    "Package request, paid activation and gift grant work in the browser",
+    "Yajra server-side search works with local assets",
+    "Mobile /admin fits viewport",
+    "Mobile /admin/orders fits viewport",
+    "Mobile /admin/finance fits viewport",
+    "Mobile /admin/catalog/tariffs fits viewport",
+    "Mobile /admin/reports fits viewport",
+    "Role boundary and real CSRF protection are enforced",
+    "Zero page JavaScript errors and zero external requests"
+  ],
+  "pageErrors": 0,
+  "externalRequests": 0
+}

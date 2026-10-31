@@ -1,0 +1,28 @@
+{
+  "name": "gaza-delivery/foundation",
+  "description": "Accounts, staff permissions and merchant lifecycle for Gaza Delivery",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^12.0",
+    "spatie/laravel-permission": "^6.25"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0",
+    "phpunit/phpunit": "^11.5",
+    "laravel/pint": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GazaDelivery\\Foundation\\": "src/",
+      "GazaDelivery\\Foundation\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {"psr-4": {"GazaDelivery\\Foundation\\Tests\\": "tests/"}},
+  "extra": {"laravel": {"providers": ["GazaDelivery\\Foundation\\FoundationServiceProvider"]}},
+  "scripts": {"test": "phpunit", "lint": "pint --test"},
+  "config": {"sort-packages": true, "allow-plugins": {}},
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

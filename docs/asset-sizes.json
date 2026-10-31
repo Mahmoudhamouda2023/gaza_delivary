@@ -1,0 +1,34 @@
+{
+  "icons.svg": {
+    "bytes": 2545,
+    "gzip_bytes": 836
+  },
+  "store.js": {
+    "bytes": 2162,
+    "gzip_bytes": 679
+  },
+  "admin-stores.js": {
+    "bytes": 193993,
+    "gzip_bytes": 66817
+  },
+  "mark.svg": {
+    "bytes": 477,
+    "gzip_bytes": 236
+  },
+  "admin-stores.css": {
+    "bytes": 31763,
+    "gzip_bytes": 4133
+  },
+  "app.css": {
+    "bytes": 32704,
+    "gzip_bytes": 7679
+  },
+  "THIRD_PARTY_NOTICES.txt": {
+    "bytes": 3378,
+    "gzip_bytes": 839
+  },
+  "parcels.svg": {
+    "bytes": 1129,
+    "gzip_bytes": 540
+  }
+}

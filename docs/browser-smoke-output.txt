@@ -1,0 +1,1 @@
+BROWSER_CHECKS_PASSED {"merchant390":{"width":390,"scrollWidth":390},"merchant360":{"width":360,"scrollWidth":360},"merchant1366":{"width":1366,"scrollWidth":1366},"newOrder390":{"width":390,"scrollWidth":390},"javascript_errors":[],"schedule_toggle":"passed","neighborhood_filter":"passed","captain_payment_fields":"passed"}

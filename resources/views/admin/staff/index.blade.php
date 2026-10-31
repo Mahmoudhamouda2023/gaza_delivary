@@ -1,0 +1,8 @@
+@extends('layouts.shell')
+@section('title', 'فريق العمل')
+@section('breadcrumb', 'فريق العمل')
+@section('content')
+<div class="page-heading"><div><span class="eyebrow">فريق متجري</span><h1>كل شخص، بصلاحيته</h1><p>حسابات الإدارة والكباتن وحالة الوصول.</p></div>@can('manage-staff')<a class="button button-primary" href="{{ route('admin.staff.create') }}"><x-icon name="plus"/>إضافة حساب</a>@endcan</div>
+<section class="panel"><div class="staff-list">@foreach($staff as $member)<article class="staff-item"><span class="avatar">{{ mb_substr($member->name, 0, 1) }}</span><div class="staff-copy"><h2>{{ $member->name }}</h2><span class="muted"><bdi>{{ $member->phone }}</bdi></span><div class="tag-row">@foreach($member->getRoleNames() as $role)<span class="role-tag">{{ config('delivery.role_labels.'.$role) }}</span>@endforeach</div></div><div class="staff-actions"><x-status :value="$member->status"/> @can('manage-staff')<a class="text-link" href="{{ route('admin.team.edit',$member) }}">إدارة الحساب</a>@endcan 
+@if($member->isActive())@can('manage-staff')<details class="suspend-details"><summary>إيقاف الحساب</summary><form method="post" action="{{ route('admin.staff.suspend', $member) }}" class="form-stack">@csrf @method('PATCH')<label class="sr-only" for="reason-{{ $member->public_id }}">سبب الإيقاف</label><input id="reason-{{ $member->public_id }}" name="reason" placeholder="سبب الإيقاف" required minlength="3" maxlength="500"><button class="button button-danger button-small" type="submit">تأكيد الإيقاف</button></form></details>@endcan @endif</div></article>@endforeach</div>{{ $staff->links() }}</section>
+@endsection

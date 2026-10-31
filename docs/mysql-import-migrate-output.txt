@@ -1,0 +1,8 @@
+
+   INFO  Nothing to migrate.  
+
+   INFO  Seeding database.  
+
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ....... RUNNING  
+  GazaDelivery\Foundation\Database\Seeders\AccessControlSeeder ... 565 ms DONE  
+

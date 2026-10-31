@@ -1,0 +1,18 @@
+{
+  "clean_archive_install": "passed",
+  "upgrade_from_phase2": "passed",
+  "original_staff_users_stores_preserved": true,
+  "original_env_and_app_key_preserved": true,
+  "ready_schema_tables": 34,
+  "database_integrity": "ok",
+  "foreign_key_violations": 0,
+  "sqlite_consistent_backup": "passed",
+  "config_route_view_cache": "passed",
+  "composer_validate_strict": "passed",
+  "runtime_advisories_at_check": 0,
+  "automated_tests": 62,
+  "assertions": 333,
+  "browser_checks": 22,
+  "browser_js_errors": 0,
+  "browser_external_requests": 0
+}
